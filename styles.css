@@ -8,8 +8,15 @@ body {
     border: 1px solid black;
 }
 
+@font-face {
+    font-family: 'Norse-Bold'; /* You can name this anything */
+    src: url(/fonts/Norse-Bold.otf) format('opentype'); /* Ensure the path is correct */
+    font-weight: normal; /* Optional: Set the font weight */
+    font-style: normal; /* Optional: Set the font style */
+}
+
 .sidebar {
-    width: 30%;
+    width: 40%;
     background-color: #333;
     color: white;
     box-sizing: border-box;
@@ -18,10 +25,34 @@ body {
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center center;
+    position: relative;
+}
+
+.logo-container {
+    position: absolute;
+    top: 15%;
+    left: 0;
+    right: 0;
+    background-color: rgba(33, 32, 32, 0.6);
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logo {
+    width: 80px;
+    height: auto;
+}
+
+.logo-text {
+    font-size: 60px;
+    color: white; 
+    font-family: 'Norse-Bold', sans-serif;
 }
 
 .main-content {
-    width: 70%;
+    width: 60%;
     display: flex;
     flex-direction: column;
 }
@@ -61,4 +92,18 @@ input[type="tel"] {
     border: 1px solid #ccc;
     border-radius: 4px;
     font-size: 14px;
+}
+
+button {
+    padding: 10px;
+    background-color: #5cb85c;
+    color: white;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 16px;
+}
+
+button:hover {
+    background-color: #4cae4c;
 }
