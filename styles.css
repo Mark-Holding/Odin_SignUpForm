@@ -114,3 +114,7 @@ button:hover {
 .white-section {
     background-color: white;
 }
+
+input:invalid {
+    border: 2px dashed red;
+}
